@@ -8,6 +8,7 @@ async function buildFile(lang: string): Promise<void> {
 
 export async function build(): Promise<void> {
     await buildFile("zh");
+    await buildFile("en");
 }
 
 if (require.main === module) {

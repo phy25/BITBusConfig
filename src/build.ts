@@ -1,9 +1,30 @@
-import { DataJson } from "./models";
+import { DataBusPatternCalendarByMonth, DataBusPatternCalendarByYear, DataJson } from "./models";
+import { BusPatternCalendarYear } from "./modelsCalendar";
 
 async function importValidatedCalendar(): Promise<any> {
     const calendarData = await import("../data/calendar");
 
-    // TODO: validate
+    if (!calendarData.busPatternCalendar[calendarData.dayRanges[0].substring(0, 4)] ||
+        !calendarData.busPatternCalendar[calendarData.dayRanges[1].substring(0, 4)]){
+            throw new Error("dayRanges year does not exist in busPatternCalendar: " + calendarData.dayRanges);
+        }
+
+    for (var year in calendarData.busPatternCalendar as DataBusPatternCalendarByYear) {
+        let yearCalendar = calendarData.busPatternCalendar[year];
+        let yearCalendarArr: DataBusPatternCalendarByMonth;
+        if (yearCalendar instanceof BusPatternCalendarYear) {
+            yearCalendarArr = yearCalendar.toJSON();
+        } else {
+            yearCalendarArr = yearCalendar;
+        }
+        [...Array(12).keys()].forEach(i => {
+            let expected = new Date(+year, i+1, 0).getDate();
+            let actual = yearCalendarArr[i].length;
+            if (expected !== actual) {
+                throw new Error("Generated busPatternCalendar does not have enough data in " + year + "/" + (i+1));
+            }
+        });
+    }
 
     return calendarData;
 }
