@@ -37,7 +37,7 @@ data.addExamWeeksRules(
     getLocalDateFromString('2018-06-19'), getLocalDateFromString('2018-06-29'), [6, 19, 19, 19, 19, 19, 6],
 );
 
-// Check-in special service https://www.bit.edu.cn/ggfw/bcfw/a157953.htm
+// Back-to-school special service https://www.bit.edu.cn/ggfw/bcfw/a157953.htm
 data.addWeekdayOverride(getLocalDateFromString('2018-08-24'), 25);
 data.addLongHolidayRules(
     getLocalDateFromString('2018-09-22'), getLocalDateFromString('2018-09-24'), 6, null,
