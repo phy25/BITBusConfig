@@ -33,11 +33,14 @@ export async function generateFile(lang: string): Promise<DataJson> {
     const versionData = await import("../data/version");
     const calendarData = await importValidatedCalendar();
     const langData = await import("../data/" + lang + "/lang");
+    const busTypesData = await import("../data/" + lang + "/busTypes");
+
     return {
         "version": versionData.data,
         "hl": lang,
         "lang": langData.data,
         "dayRanges": calendarData.dayRanges,
         "weekdays": calendarData.busPatternCalendar,
+        "busTypes": busTypesData.data,
     };
 };

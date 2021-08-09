@@ -6,7 +6,8 @@ export interface DataJson {
     version: number;
     lang: DataLang;
     dayRanges: string[];
-    weekdays?: DataBusPatternCalendarByYear; // TODO: make this required
+    weekdays: DataBusPatternCalendarByYear;
+    busTypes: DataBusTypes;
 };
 
 export type DataBusPatternCalendarByYear = Record<string, DataBusPatternCalendarByMonth | BusPatternCalendarYear>;
@@ -43,7 +44,17 @@ export interface UnlocalizedDataLangDestListItem {
     enableLXSubway: DataLangDestListItemStartEnd;
 };
 
-export interface DataLangDestListItem extends UnlocalizedDataLangDestListItem{
+export interface DataLangDestListItem extends UnlocalizedDataLangDestListItem {
     name: string;
     subwayRoutes: string;
+};
+
+export type DataBusTypes = Record<string, DataBusTypesItem>;
+
+export interface DataBusTypesItem {
+    name: string;
+    label?: string;
+    fare: string;
+    contactNumber: string;
+    provider: string;
 };

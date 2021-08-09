@@ -44,7 +44,7 @@ describe('real file test', () => {
             expect(actual.stops).toEqual(expected.stops);
         });
 
-        test.skip('busTypes object', () => {
+        test('busTypes object', () => {
             expect(actual.busTypes).toEqual(expected.busTypes);
         });
 
