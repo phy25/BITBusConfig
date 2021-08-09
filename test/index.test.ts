@@ -17,7 +17,7 @@ describe('real file test', () => {
             expect(actual.hl).toEqual(expected.hl);
         });
 
-        describe.each([2017])('calendar object - %d', (year) => {
+        describe.each([2017, 2018])('calendar object - %d', (year) => {
             test('dayRanges', () => {
                 expect(actual.dayRanges).toEqual(expected.dayRanges);
             });
