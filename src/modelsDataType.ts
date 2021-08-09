@@ -14,7 +14,8 @@ export class TimeAsInt {
 
 export type BusPatternSchedule = number;
 
-export function getLocalDateFromString(datestr: string): Date {
+export function getLocalDateFromString(datestr: string): Date | null {
+    if (!datestr) return null;
     let date = new Date(datestr);
     return new Date(+date + date.getTimezoneOffset() * 60000);
 }

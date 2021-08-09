@@ -17,6 +17,16 @@ describe('real file test', () => {
             expect(actual.hl).toEqual(expected.hl);
         });
 
+        describe.each([2017])('calendar object - %d', (year) => {
+            test('dayRanges', () => {
+                expect(actual.dayRanges).toEqual(expected.dayRanges);
+            });
+
+            test.each([...Array(12).keys()])('month_i %d', (month_i) => {
+                expect(actual.weekdays[year+''][month_i]).toEqual(expected.weekdays[year+''][month_i]);
+            });
+        });
+
         test.skip('calendar object', () => {
             expect(actual.dayRanges).toEqual(expected.dayRanges);
             expect(actual.weekdays).toEqual(expected.weekdays);
