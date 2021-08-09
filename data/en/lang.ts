@@ -1,6 +1,8 @@
 import { DataLang } from '../../src/models';
+import * as destList from './destList';
 
 export const data: DataLang = {
+    "destList": destList.data,
     "changelog": "Not sure about the schedule at all. BTW we have Liangxiang subway shuttle hours naive intergration.",
     "notice": "I have no idea what the current schedule is. If you happen to know, let us know by pressing Feedback below.",
     "fare": "Campus bus between Zhongguancun and Liangxiang: Single ticket, Student RMB 6, Faculty and others RMB 10. Only accepts campus card, fare deducted according to card type.\nRainbow Bus: Fare RMB 9. Only accept payment from WeChat official account 彩虹巴士H2O or respective mobile app.",

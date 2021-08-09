@@ -11,7 +11,7 @@
   "name": "bitbus-config",
   "version": "1.0.0",
   "scripts": {
-    "build": "ts-node src/index.ts",
+    "build": "node --unhandled-rejections=strict -r ts-node/register src/index.ts",
     "test": "jest"
   },
   "author": "Phy25",

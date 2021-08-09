@@ -9,7 +9,7 @@ describe('real file test', () => {
         let actual: any;
         beforeAll(async () => {
             expected = require(file);
-            actual = await generateFile(lang);
+            actual = JSON.parse(JSON.stringify(await generateFile(lang)));
         });
 
         test('lang object', () => {

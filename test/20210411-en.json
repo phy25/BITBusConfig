@@ -3855,54 +3855,6 @@
                 "subwayLateStart": 1329,
                 "subwayActualEnd": 1329,
                 "enableLXSubway": "start"
-            },
-            "ZGC2XS": {
-                "_latLng": [
-                    0,
-                    0
-                ]
-            },
-            "XS2ZGC": {
-                "_latLng": [
-                    0,
-                    0
-                ]
-            },
-            "ZGC2HLG": {
-                "_latLng": [
-                    0,
-                    0
-                ]
-            },
-            "ZGC2XSQ": {
-                "_latLng": [
-                    0,
-                    0
-                ]
-            },
-            "HLG2ZGC": {
-                "_latLng": [
-                    0,
-                    0
-                ]
-            },
-            "XSQ2ZGC": {
-                "_latLng": [
-                    0,
-                    0
-                ]
-            },
-            "XSQ2LX": {
-                "_latLng": [
-                    0,
-                    0
-                ]
-            },
-            "LX2XSQ": {
-                "_latLng": [
-                    0,
-                    0
-                ]
             }
         }
     }
