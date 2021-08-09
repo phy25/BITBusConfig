@@ -12,7 +12,7 @@ describe('real file test', () => {
             actual = JSON.parse(JSON.stringify(await generateFile(lang)));
         });
 
-        test.skip('top-level metadata', () => {
+        test('top-level metadata', () => {
             expect(actual.version).toEqual(expected.version);
             expect(actual.hl).toEqual(expected.hl);
         });

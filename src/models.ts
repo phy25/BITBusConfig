@@ -1,5 +1,11 @@
 import { TimeAsInt } from "./modelsDataType"
 
+export interface DataJson {
+    hl: string;
+    version: number;
+    lang: DataLang;
+};
+
 export interface DataLang {
     changelog: string;
     notice: string;
