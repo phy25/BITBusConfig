@@ -4,7 +4,13 @@ export interface DataJson {
     hl: string;
     version: number;
     lang: DataLang;
+    dayRanges: string[];
+    weekdays?: DataBusPatternCalendarByYear; // TODO: make this required
 };
+
+export type DataBusPatternCalendarByYear = Record<string, DataBusPatternCalendarByDay[]>;
+
+export type DataBusPatternCalendarByDay = number[];
 
 export interface DataLang {
     changelog: string;

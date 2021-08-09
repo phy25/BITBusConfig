@@ -17,9 +17,9 @@ describe('real file test', () => {
             expect(actual.hl).toEqual(expected.hl);
         });
 
-        test.skip('date object', () => {
-            expect(actual.weekdays).toEqual(expected.weekdays);
+        test.skip('calendar object', () => {
             expect(actual.dayRanges).toEqual(expected.dayRanges);
+            expect(actual.weekdays).toEqual(expected.weekdays);
         });
 
         test.skip('buses object', () => {
