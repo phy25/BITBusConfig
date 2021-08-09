@@ -1,4 +1,4 @@
-import { TimeAsInt } from "./modelsDataType"
+import { BusPatternSchedule, TimeAsInt } from "./modelsDataType"
 
 export interface DataJson {
     hl: string;
@@ -8,9 +8,11 @@ export interface DataJson {
     weekdays?: DataBusPatternCalendarByYear; // TODO: make this required
 };
 
-export type DataBusPatternCalendarByYear = Record<string, DataBusPatternCalendarByDay[]>;
+export type DataBusPatternCalendarByYear = Record<string, DataBusPatternCalendarByMonth>;
 
-export type DataBusPatternCalendarByDay = number[];
+export type DataBusPatternCalendarByMonth = DataBusPatternCalendarByDay[];
+
+export type DataBusPatternCalendarByDay = BusPatternSchedule[];
 
 export interface DataLang {
     changelog: string;
