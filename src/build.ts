@@ -1,4 +1,4 @@
-export function generateFile(lang: string): any {
-    const langJson = require("../data/" + lang + "/lang.json");
-    return {"lang": {...langJson}};
-}
+export async function generateFile(lang: string): Promise<any> {
+    const langJson = await import("../data/" + lang + "/lang");
+    return {"lang": {...langJson.data}};
+};

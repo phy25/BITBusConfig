@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import { generateFile } from './build';
 
 async function buildFile(lang: string): Promise<void> {
-    const json = generateFile(lang);
+    const json = await generateFile(lang);
     await fs.promises.writeFile("./build/"+lang+".json", JSON.stringify(json, null, 0));
 }
 

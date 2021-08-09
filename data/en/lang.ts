@@ -1,4 +1,6 @@
-{
+import { DataLang } from '../../src/models';
+
+export const data: DataLang = {
     "changelog": "Not sure about the schedule at all. BTW we have Liangxiang subway shuttle hours naive intergration.",
     "notice": "I have no idea what the current schedule is. If you happen to know, let us know by pressing Feedback below.",
     "fare": "Campus bus between Zhongguancun and Liangxiang: Single ticket, Student RMB 6, Faculty and others RMB 10. Only accepts campus card, fare deducted according to card type.\nRainbow Bus: Fare RMB 9. Only accept payment from WeChat official account 彩虹巴士H2O or respective mobile app.",
@@ -13,5 +15,5 @@
     "contactNumberRainbow": [
         "4000780080"
     ],
-    "contactNumberRainbowNote": "Mon-Fri 6:30-20:30 (Chinese Only)"
-}
+    "contactNumberRainbowNote": "Mon-Fri 6:30-20:30 (Chinese Only)",
+};

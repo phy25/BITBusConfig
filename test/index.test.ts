@@ -7,9 +7,9 @@ describe('real file test', () => {
     ])('%s', (file, lang) => {
         let expected: any;
         let actual: any;
-        beforeAll(() => {
+        beforeAll(async () => {
             expected = require(file);
-            actual = generateFile(lang);
+            actual = await generateFile(lang);
         });
 
         test('lang object', () => {
