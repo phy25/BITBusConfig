@@ -66,8 +66,13 @@ export class BITBusPatternCalendarYear extends BusPatternCalendarYear {
     readonly dayOverridesRule: BusPatternCalendarDayOverridesYearSingletonRule;
     private currentExecutionOrder: number = BusPatternCalendarWeeklyScheduleRule.DEFAULT_EXECUTION_ORDER;
 
+    readonly firstDayOfYear: Date;
+    readonly lastDayOfYear: Date;
+
     constructor(year: number) {
         super(year);
+        this.firstDayOfYear = getLocalDateFromString(this.year + '-01-01');
+        this.lastDayOfYear = getLocalDateFromString(this.year + '-12-31');
         this.dayOverridesRule = new BusPatternCalendarDayOverridesYearSingletonRule(year);
         this.addRule(this.dayOverridesRule);
     }
@@ -101,16 +106,13 @@ export class BITBusPatternCalendarYear extends BusPatternCalendarYear {
                 executionOrder = this.vendExecutionOrder();
             }
 
-            const firstDayOfYear = getLocalDateFromString(this.year + '-01-01');
-            const lastDayOfYear = getLocalDateFromString(this.year + '-12-31');
-
-            // console.log([firstDayOfYear, lastLocalSundayLastFallSemester, checkInLocalFridaySpringSemester,
-            //     lastLocalSundaySpringSemester, checkInLocalFridayFallSemester, lastDayOfYear]);
+            // console.log([this.firstDayOfYear, lastLocalSundayLastFallSemester, checkInLocalFridaySpringSemester,
+            //     lastLocalSundaySpringSemester, checkInLocalFridayFallSemester, this.lastDayOfYear]);
 
             // 01-01 - lastLocalFridayLastFallSemester: last fall semester
             if (lastLocalSundayLastFallSemester) {
                 this.addRule(new BusPatternCalendarWeeklyScheduleRule(
-                    firstDayOfYear, lastLocalSundayLastFallSemester, semesterWeeklySchedule, executionOrder));
+                    this.firstDayOfYear, lastLocalSundayLastFallSemester, semesterWeeklySchedule, executionOrder));
             }
             // lastLocalFridayLastFallSemester - checkInLocalFridaySpringSemester: spring festival
             if (lastLocalSundayLastFallSemester && checkInLocalFridaySpringSemester) {
@@ -134,7 +136,7 @@ export class BITBusPatternCalendarYear extends BusPatternCalendarYear {
             // checkInLocalFridayFallSemester - 12-31: fall semester
             if (checkInLocalFridayFallSemester) {
                 this.addRule(new BusPatternCalendarWeeklyScheduleRule(
-                    checkInLocalFridayFallSemester, lastDayOfYear, semesterWeeklySchedule, executionOrder));
+                    checkInLocalFridayFallSemester, this.lastDayOfYear, semesterWeeklySchedule, executionOrder));
             }
     }
 
@@ -164,6 +166,13 @@ export class BITBusPatternCalendarYear extends BusPatternCalendarYear {
             weekendExecutionOrder = this.vendExecutionOrder();
         }
 
+        if (+weekendStartLocalDate < +this.firstDayOfYear) {
+            throw new Error("weekendStartLocalDate < firstDayOfYear, " + weekendStartLocalDate + " < " + this.firstDayOfYear);
+        }
+        if (+weekendEndLocalDate > +this.lastDayOfYear) {
+            throw new Error("weekendEndLocalDate > lastDayOfYear, " + weekendEndLocalDate + " > " + this.lastDayOfYear);
+        }
+
         this.addRule(new BusPatternCalendarWeeklyScheduleRule(
             weekendStartLocalDate, weekendEndLocalDate, Array(7).fill(weekendSchedule), weekendExecutionOrder));
         holidayLocalDates.forEach(holidayLocalDate => {
@@ -179,6 +188,13 @@ export class BITBusPatternCalendarYear extends BusPatternCalendarYear {
     ): void {
         if (!executionOrder) {
             executionOrder = this.vendExecutionOrder();
+        }
+
+        if (+startLocalDate < +this.firstDayOfYear) {
+            throw new Error("startLocalDate < firstDayOfYear, " + startLocalDate + " < " + this.firstDayOfYear);
+        }
+        if (+endLocalDate > +this.lastDayOfYear) {
+            throw new Error("endLocalDate > lastDayOfYear, " + endLocalDate + " > " + this.lastDayOfYear);
         }
 
         this.addRule(new BusPatternCalendarWeeklyScheduleRule(
