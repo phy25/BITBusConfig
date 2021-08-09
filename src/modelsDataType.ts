@@ -18,3 +18,5 @@ export function getLocalDateFromString(datestr: string): Date {
     let date = new Date(datestr);
     return new Date(+date + date.getTimezoneOffset() * 60000);
 }
+
+export const MILLISECONDS_IN_DAY = 1000 * 60 * 60 * 24;

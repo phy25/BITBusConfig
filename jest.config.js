@@ -5,7 +5,9 @@ module.exports = {
   reporters: [
     "default",
     ["./node_modules/jest-html-reporter", {
-      'includeFailureMsg': true,
+      "includeFailureMsg": true,
+      "includeSuiteFailure": true,
+      "statusIgnoreFilter": "passed",
       "outputPath": "./build/test-report.html",
     }]
   ],

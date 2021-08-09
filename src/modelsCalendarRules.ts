@@ -1,4 +1,4 @@
-import { BusPatternSchedule } from "./modelsDataType";
+import { BusPatternSchedule, MILLISECONDS_IN_DAY } from "./modelsDataType";
 
 export type BusPatternCalendarDayOverrideMap = Map<number, Map<number, BusPatternSchedule>>;
 
@@ -36,7 +36,7 @@ export class BusPatternCalendarWeeklyScheduleRule implements BusPatternCalendarR
         offsetedLocalEndDate.setMinutes(0);
         offsetedLocalEndDate.setSeconds(0);
         offsetedLocalEndDate.setMilliseconds(0);
-        offsetedLocalEndDate = new Date(+offsetedLocalEndDate + 1000 * 60 * 60 * 24 - 1);
+        offsetedLocalEndDate = new Date(+offsetedLocalEndDate + MILLISECONDS_IN_DAY - 1);
 
         this.startTimestamp = +offsetedLocalStartDate;
         this.endTimestamp = +offsetedLocalEndDate;

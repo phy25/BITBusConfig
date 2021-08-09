@@ -8,7 +8,7 @@ describe('BusPatternCalendarWeeklyScheduleRule', () => {
     describe('regular weekly schedule', () => {
         let instance: BusPatternCalendarWeeklyScheduleRule;
 
-        beforeAll(async () => {
+        beforeAll(() => {
             instance = new BusPatternCalendarWeeklyScheduleRule(START_DATE, END_DATE, [0, 1, 2, 3, 4, 5, 6]);
         });
 
@@ -50,7 +50,7 @@ describe('BusPatternCalendarWeeklyScheduleRule', () => {
     describe('weekly schedule valid for 1 day', () => {
         let instance: BusPatternCalendarWeeklyScheduleRule;
 
-        beforeAll(async () => {
+        beforeAll(() => {
             instance = new BusPatternCalendarWeeklyScheduleRule(START_DATE, START_DATE, [0, 1, 2, 3, 4, 5, 6]);
         });
 
@@ -97,7 +97,7 @@ describe('BusPatternCalendarDayOverridesYearSingletonRule', () => {
     describe('regular override', () => {
         let instance: BusPatternCalendarDayOverridesYearSingletonRule;
 
-        beforeAll(async () => {
+        beforeAll(() => {
             instance = new BusPatternCalendarDayOverridesYearSingletonRule(2021);
             instance.addDayOverride({localDate: getLocalDateFromString('2021-07-23'), schedule: 16});
             instance.addDayOverride({localDate: getLocalDateFromString('2021-08-08'), schedule: 17});
@@ -146,7 +146,7 @@ describe('BusPatternCalendarDayOverridesYearSingletonRule', () => {
     describe('addDayOverride not in target year', () => {
         let instance: BusPatternCalendarDayOverridesYearSingletonRule;
 
-        beforeAll(async () => {
+        beforeAll(() => {
             instance = new BusPatternCalendarDayOverridesYearSingletonRule(2021);
         });
 
