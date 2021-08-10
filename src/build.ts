@@ -35,6 +35,7 @@ export async function generateFile(lang: string): Promise<DataJson> {
     const langData = await import("../data/" + lang + "/lang");
     const busTypesData = await import("../data/" + lang + "/busTypes");
     const stopsData = await import("../data/" + lang + "/stops");
+    const busesData = await import("../data/buses");
     const busesLxSubwayData = await import("../data/busesLXSubway");
 
     return {
@@ -45,6 +46,7 @@ export async function generateFile(lang: string): Promise<DataJson> {
         "weekdays": calendarData.busPatternCalendar,
         "busTypes": busTypesData.data,
         "stops": stopsData.data,
+        "buses": busesData.getData(lang),
         "busesLXSubway": busesLxSubwayData.data,
     };
 };

@@ -10,6 +10,7 @@ export interface DataJson {
     weekdays: DataBusPatternCalendarByYear;
     busTypes: DataBusTypes;
     stops: DataStops;
+    buses: DataBuses;
     busesLXSubway: DataBusesLXSubway;
 };
 
@@ -75,4 +76,21 @@ export type DataBusesLXSubway = Record<string, DataBusesLXSubwayItem>;
 
 export interface DataBusesLXSubwayItem {
     departure: TimeAsInt[] | BusSingleTimetable;
+};
+
+export type DataBuses = Record<string, DataBusesList>;
+
+export type DataBusesList = DataBusesListItem[];
+
+export interface DataBusesListItem {
+    id: string;
+    stops: string[];
+    time: number[];
+    days?: number[];
+    date?: number[];
+    type: number;
+    coaches: number;
+    remark?: string | null;
+    stopsFade?: number[];
+    "label-sm"?: string;
 };
