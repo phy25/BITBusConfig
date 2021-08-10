@@ -1,5 +1,6 @@
 import { BusPatternCalendarYear } from "./modelsCalendar";
 import { BusPatternSchedule, TimeAsInt } from "./modelsDataType"
+import { BusSingleTimetable } from "./modelsSingleTimetable";
 
 export interface DataJson {
     hl: string;
@@ -9,6 +10,7 @@ export interface DataJson {
     weekdays: DataBusPatternCalendarByYear;
     busTypes: DataBusTypes;
     stops: DataStops;
+    busesLXSubway: DataBusesLXSubway;
 };
 
 export type DataBusPatternCalendarByYear = Record<string, DataBusPatternCalendarByMonth | BusPatternCalendarYear>;
@@ -67,4 +69,10 @@ export interface DataStopsItem {
     desc: string;
     image: string | null;
     tencentLatlng: number[];
+};
+
+export type DataBusesLXSubway = Record<string, DataBusesLXSubwayItem>;
+
+export interface DataBusesLXSubwayItem {
+    departure: TimeAsInt[] | BusSingleTimetable;
 };
