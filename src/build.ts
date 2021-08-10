@@ -34,6 +34,7 @@ export async function generateFile(lang: string): Promise<DataJson> {
     const calendarData = await importValidatedCalendar();
     const langData = await import("../data/" + lang + "/lang");
     const busTypesData = await import("../data/" + lang + "/busTypes");
+    const stopsData = await import("../data/" + lang + "/stops");
 
     return {
         "version": versionData.data,
@@ -42,5 +43,6 @@ export async function generateFile(lang: string): Promise<DataJson> {
         "dayRanges": calendarData.dayRanges,
         "weekdays": calendarData.busPatternCalendar,
         "busTypes": busTypesData.data,
+        "stops": stopsData.data,
     };
 };

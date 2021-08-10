@@ -8,6 +8,7 @@ export interface DataJson {
     dayRanges: string[];
     weekdays: DataBusPatternCalendarByYear;
     busTypes: DataBusTypes;
+    stops: DataStops;
 };
 
 export type DataBusPatternCalendarByYear = Record<string, DataBusPatternCalendarByMonth | BusPatternCalendarYear>;
@@ -57,4 +58,13 @@ export interface DataBusTypesItem {
     fare: string;
     contactNumber: string;
     provider: string;
+};
+
+export type DataStops = Record<string, DataStopsItem>;
+
+export interface DataStopsItem {
+    name: string;
+    desc: string;
+    image: string | null;
+    tencentLatlng: number[];
 };

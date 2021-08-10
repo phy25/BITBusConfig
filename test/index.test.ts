@@ -40,7 +40,7 @@ describe('real file test', () => {
             expect(actual.busesLXSubway).toEqual(expected.busesLXSubway);
         });
 
-        test.skip('stops object', () => {
+        test('stops object', () => {
             expect(actual.stops).toEqual(expected.stops);
         });
 
