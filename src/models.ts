@@ -78,9 +78,9 @@ export interface DataBusesLXSubwayItem {
     departure: TimeAsInt[] | BusSingleTimetable;
 };
 
-export type DataBuses = Record<string, DataBusesList>;
+export type DataBuses = Record<string, DataBusesDestList>;
 
-export type DataBusesList = DataBusesListItem[];
+export type DataBusesDestList = DataBusesListItem[];
 
 export interface DataBusesListItem {
     id: string;
