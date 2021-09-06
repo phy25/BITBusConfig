@@ -1,5 +1,7 @@
 import { BITBusPatternCalendarYear } from "../src/modelsCalendar";
 import { getLocalDateFromString } from "../src/modelsDataType";
+import { ScheduleDays } from "./scheduleDays";
+import * as SchedulePatterns from "./schedulePatterns";
 
 export const data = new BITBusPatternCalendarYear(2018);
 
@@ -8,47 +10,47 @@ data.addSemesterRules(
     getLocalDateFromString('2018-02-23'),
     getLocalDateFromString('2018-07-01'),
     getLocalDateFromString('2018-08-24'),
-    [6, 11, 12, 13, 14, 15, 6],
-    [0, 0, 0, 0, 0, 0, 0],
+    SchedulePatterns.V1_H2O_WORKWEEK,
+    SchedulePatterns.V1_HOLIDAYS,
 );
 
-data.addHolidayOverride(getLocalDateFromString('2018-01-01'), 0);
+data.addHolidayOverride(getLocalDateFromString('2018-01-01'), ScheduleDays.V1_HOLIDAY);
 data.addExamWeeksRules(
-    getLocalDateFromString('2018-01-08'), getLocalDateFromString('2018-01-19'), [6, 19, 19, 19, 19, 19, 6],
+    getLocalDateFromString('2018-01-08'), getLocalDateFromString('2018-01-19'), SchedulePatterns.V1_H2O_EXAMWEEK,
 );
 // Rainbow Bus did not start/stop service strictly following the vacation
-data.addHolidayOverride(getLocalDateFromString('2018-01-22'), 10);
-data.addHolidayOverride(getLocalDateFromString('2018-01-23'), 10);
-data.addHolidayOverride(getLocalDateFromString('2018-01-24'), 10);
-data.addWeekdayOverride(getLocalDateFromString('2018-02-23'), 5);
+data.addHolidayOverride(getLocalDateFromString('2018-01-22'), ScheduleDays.V1_H2O_ONLY);
+data.addHolidayOverride(getLocalDateFromString('2018-01-23'), ScheduleDays.V1_H2O_ONLY);
+data.addHolidayOverride(getLocalDateFromString('2018-01-24'), ScheduleDays.V1_H2O_ONLY);
+data.addWeekdayOverride(getLocalDateFromString('2018-02-23'), ScheduleDays.V1_FRIDAY);
 data.addLongHolidayRules(
-    getLocalDateFromString('2018-04-05'), getLocalDateFromString('2018-04-08'), 6, null,
-    [getLocalDateFromString('2018-04-05')], 0,
+    getLocalDateFromString('2018-04-05'), getLocalDateFromString('2018-04-08'), ScheduleDays.V1_WEEKEND, null,
+    [getLocalDateFromString('2018-04-05')], ScheduleDays.V1_HOLIDAY,
 );
 data.addLongHolidayRules(
-    getLocalDateFromString('2018-04-28'), getLocalDateFromString('2018-05-01'), 6, null,
-    [getLocalDateFromString('2018-05-01')], 0,
+    getLocalDateFromString('2018-04-28'), getLocalDateFromString('2018-05-01'), ScheduleDays.V1_WEEKEND, null,
+    [getLocalDateFromString('2018-05-01')], ScheduleDays.V1_HOLIDAY,
 );
 data.addLongHolidayRules(
-    getLocalDateFromString('2018-06-16'), getLocalDateFromString('2018-06-18'), 6, null,
-    [getLocalDateFromString('2018-06-18')], 0,
+    getLocalDateFromString('2018-06-16'), getLocalDateFromString('2018-06-18'), ScheduleDays.V1_WEEKEND, null,
+    [getLocalDateFromString('2018-06-18')], ScheduleDays.V1_HOLIDAY,
 );
 data.addExamWeeksRules(
-    getLocalDateFromString('2018-06-19'), getLocalDateFromString('2018-06-29'), [6, 19, 19, 19, 19, 19, 6],
+    getLocalDateFromString('2018-06-19'), getLocalDateFromString('2018-06-29'), SchedulePatterns.V1_H2O_EXAMWEEK,
 );
 
 // Back-to-school special service https://www.bit.edu.cn/ggfw/bcfw/a157953.htm
-data.addWeekdayOverride(getLocalDateFromString('2018-08-24'), 25);
+data.addWeekdayOverride(getLocalDateFromString('2018-08-24'), ScheduleDays.V1_FRIDAY_AS_REGULAR);
 data.addLongHolidayRules(
-    getLocalDateFromString('2018-09-22'), getLocalDateFromString('2018-09-24'), 6, null,
-    [getLocalDateFromString('2018-09-24')], 0,
+    getLocalDateFromString('2018-09-22'), getLocalDateFromString('2018-09-24'), ScheduleDays.V1_WEEKEND, null,
+    [getLocalDateFromString('2018-09-24')], ScheduleDays.V1_HOLIDAY,
 );
 data.addLongHolidayRules(
-    getLocalDateFromString('2018-10-01'), getLocalDateFromString('2018-10-07'), 0, null,
-    [], 0,
+    getLocalDateFromString('2018-10-01'), getLocalDateFromString('2018-10-07'), ScheduleDays.V1_HOLIDAY, null,
+    [], ScheduleDays.V1_HOLIDAY,
 );
-data.addWeekdayOverride(getLocalDateFromString('2018-12-29'), 12); // weekend as weekday
+data.addWeekdayOverride(getLocalDateFromString('2018-12-29'), ScheduleDays.V1_H2O_TUESDAY); // weekend as weekday
 data.addLongHolidayRules(
-    getLocalDateFromString('2018-12-30'), getLocalDateFromString('2018-12-31'), 6, null,
-    [], 0,
+    getLocalDateFromString('2018-12-30'), getLocalDateFromString('2018-12-31'), ScheduleDays.V1_WEEKEND, null,
+    [], ScheduleDays.V1_HOLIDAY,
 );
