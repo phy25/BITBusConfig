@@ -1,11 +1,11 @@
-import { DataBuses, DataBusesDestList } from "../src/models";
+import { DataBuses } from "../src/models";
 
-const ZGC2LX: DataBusesDestList = [];
-const LX2ZGC: DataBusesDestList = [];
+import * as busesZGC2LX from "./busesZGC2LX";
+// import * as busesLX2ZGC from "./busesLX2ZGC";
 
 export function getData(lang: string): DataBuses {
     return {
-        ZGC2LX: ZGC2LX,
-        LX2ZGC: LX2ZGC,
+        ZGC2LX: busesZGC2LX.getData(lang),
+        // LX2ZGC: busesLX2ZGC.getData(lang),
     };
 }

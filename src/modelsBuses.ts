@@ -4,13 +4,15 @@ export class BusScheduleStop {
     stopId: string;
     hour: number;
     minute: number;
-    fade: number;
+    fade?: number;
 
-    constructor(stopId: string, hour: number, minute: number, fade: number) {
+    constructor(stopId: string, hour: number, minute: number, fade?: number) {
         this.stopId = stopId;
         this.hour = hour;
         this.minute = minute;
-        this.fade = fade;
+        if (fade) {
+            this.fade = fade;
+        }
     }
 }
 
@@ -74,6 +76,23 @@ export class BusLine {
             item.stopsFade.push(stop.fade || 0);
         });
 
+        // temp optimization for stopsFade
+        if (item.stopsFade.filter(e => !!e).length == 0) {
+            delete item.stopsFade;
+        }
+
         return item;
+    }
+};
+
+export class BusesDestList {
+    items: BusLine[] = [];
+
+    push(item: BusLine): void {
+        this.items.push(item);
+    }
+
+    toJSON(): DataBusesListItem[] {
+        return this.items.map(item => item.toJSON());
     }
 };

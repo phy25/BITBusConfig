@@ -1,3 +1,4 @@
+import { BusesDestList, BusLine } from "./modelsBuses";
 import { BusPatternCalendarYear } from "./modelsCalendar";
 import { BusPatternSchedule, TimeAsInt } from "./modelsDataType"
 import { BusSingleTimetable } from "./modelsSingleTimetable";
@@ -80,7 +81,7 @@ export interface DataBusesLXSubwayItem {
 
 export type DataBuses = Record<string, DataBusesDestList>;
 
-export type DataBusesDestList = DataBusesListItem[];
+export type DataBusesDestList = DataBusesListItem[] | BusesDestList;
 
 export interface DataBusesListItem {
     id: string;

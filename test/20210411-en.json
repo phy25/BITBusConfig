@@ -1985,7 +1985,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2032,7 +2031,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2079,7 +2077,6 @@
                 ],
                 "type": 0,
                 "coaches": 2,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2108,7 +2105,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2155,7 +2151,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2192,7 +2187,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2242,7 +2236,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2289,7 +2282,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2336,7 +2328,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2383,7 +2374,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2412,7 +2402,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2460,7 +2449,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2488,7 +2476,6 @@
                 ],
                 "type": 1,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2512,8 +2499,7 @@
                     36
                 ],
                 "type": 1,
-                "coaches": 1,
-                "remark": null
+                "coaches": 1
             },
             {
                 "id": "Z12",
@@ -2532,8 +2518,7 @@
                     36
                 ],
                 "type": 1,
-                "coaches": 1,
-                "remark": null
+                "coaches": 1
             },
             {
                 "id": "Z13",
@@ -2552,8 +2537,7 @@
                     36
                 ],
                 "type": 1,
-                "coaches": 1,
-                "remark": null
+                "coaches": 1
             },
             {
                 "id": "Z16",
@@ -2571,8 +2555,7 @@
                     36
                 ],
                 "type": 1,
-                "coaches": 1,
-                "remark": null
+                "coaches": 1
             },
             {
                 "id": "Z14",
@@ -2590,8 +2573,7 @@
                     0
                 ],
                 "type": 1,
-                "coaches": 1,
-                "remark": null
+                "coaches": 1
             },
             {
                 "id": "Z15",
@@ -2609,8 +2591,7 @@
                     0
                 ],
                 "type": 1,
-                "coaches": 1,
-                "remark": null
+                "coaches": 1
             },
             {
                 "id": "Z21",
@@ -2636,7 +2617,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2667,7 +2647,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2704,7 +2683,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2748,7 +2726,6 @@
                 ],
                 "type": 3,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2792,7 +2769,6 @@
                 ],
                 "type": 3,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     0,
                     0,
@@ -2844,7 +2820,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     1,
                     0,
@@ -2891,7 +2866,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     1,
                     0,
@@ -2938,7 +2912,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     1,
                     0,
@@ -2988,7 +2961,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     1,
                     0,
@@ -3035,7 +3007,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     1,
                     0,
@@ -3082,7 +3053,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     1,
                     0,
@@ -3129,7 +3099,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     1,
                     0,
@@ -3158,7 +3127,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     1,
                     0,
@@ -3205,7 +3173,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     1,
                     0,
@@ -3253,7 +3220,6 @@
                 ],
                 "type": 0,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     1,
                     0,
@@ -3286,7 +3252,6 @@
                 ],
                 "type": 1,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     1,
                     0,
@@ -3317,7 +3282,6 @@
                 ],
                 "type": 1,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     1,
                     0,
@@ -3340,8 +3304,7 @@
                     36
                 ],
                 "type": 1,
-                "coaches": 1,
-                "remark": null
+                "coaches": 1
             },
             {
                 "id": "L11",
@@ -3360,8 +3323,7 @@
                     36
                 ],
                 "type": 1,
-                "coaches": 1,
-                "remark": null
+                "coaches": 1
             },
             {
                 "id": "L12",
@@ -3380,8 +3342,7 @@
                     36
                 ],
                 "type": 1,
-                "coaches": 1,
-                "remark": null
+                "coaches": 1
             },
             {
                 "id": "L13",
@@ -3400,8 +3361,7 @@
                     36
                 ],
                 "type": 1,
-                "coaches": 1,
-                "remark": null
+                "coaches": 1
             },
             {
                 "id": "L14",
@@ -3419,8 +3379,7 @@
                     0
                 ],
                 "type": 1,
-                "coaches": 1,
-                "remark": null
+                "coaches": 1
             },
             {
                 "id": "L15",
@@ -3438,8 +3397,7 @@
                     0
                 ],
                 "type": 1,
-                "coaches": 1,
-                "remark": null
+                "coaches": 1
             },
             {
                 "id": "L21",
@@ -3471,7 +3429,6 @@
                 ],
                 "type": 1,
                 "coaches": 1,
-                "remark": null,
                 "stopsFade": [
                     1,
                     0,

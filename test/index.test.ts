@@ -1,5 +1,10 @@
 import { generateFile } from '../src/build';
 
+const dropDays = (e: any) => {
+    e.days = [];
+    return e;
+};
+
 describe('real file test', () => {
     describe.each([
         ['./20210411-zh.json', 'zh'],
@@ -34,6 +39,14 @@ describe('real file test', () => {
 
         test.skip('buses object', () => {
             expect(actual.buses).toEqual(expected.buses);
+        });
+
+        test('buses.ZGC2LX without days', () => {
+            expect(actual.buses.ZGC2LX.map(dropDays)).toEqual(expected.buses.ZGC2LX.map(dropDays));
+        });
+
+        test.skip('buses.LX2ZGC without days', () => {
+            expect(actual.buses.LX2ZGC.map(dropDays)).toEqual(expected.buses.LX2ZGC.map(dropDays));
         });
 
         test('busesLXSubway object', () => {
