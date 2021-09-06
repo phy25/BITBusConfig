@@ -3472,7 +3472,6 @@
                 ],
                 "type": 3,
                 "coaches": 1,
-                "label-sm": "",
                 "stopsFade": [
                     1,
                     0,
@@ -3505,7 +3504,6 @@
                 ],
                 "type": 3,
                 "coaches": 1,
-                "label-sm": "",
                 "stopsFade": [
                     1,
                     0,
@@ -3543,34 +3541,11 @@
                 ],
                 "type": 3,
                 "coaches": 1,
-                "label-sm": "",
                 "stopsFade": [
                     1,
                     0,
                     0
                 ]
-            },
-            {
-                "id": "T1",
-                "stops": [
-                    "ZGC",
-                    "LX"
-                ],
-                "days": [],
-                "date": [
-                    2017,
-                    1,
-                    1
-                ],
-                "time": [
-                    0,
-                    0,
-                    0,
-                    30
-                ],
-                "type": 2,
-                "coaches": 1,
-                "remark": "考试专用测试班车"
             }
         ]
     },
