@@ -12,3 +12,4 @@ Believe it or not, previously it was a process of handcrafting JSON with some he
 - (TODO) `npm run deploy` deploy updated JSON to Tencent Cloud for WeChat Mini Program
 - `npm test` run test suite of the scripts and snapshot tests
   - `npm run test:nosnapshot` to only run unit tests
+  - `npm run test:snapshot` to only run snapshot tests

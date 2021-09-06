@@ -13,6 +13,7 @@
   "scripts": {
     "build": "node --unhandled-rejections=strict -r ts-node/register src/index.ts",
     "test": "jest",
+    "test:snapshot": "jest --config jest-snapshot.config.js",
     "test:nosnapshot": "jest --config jest-nosnapshot.config.js"
   },
   "author": "Phy25",
