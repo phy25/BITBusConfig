@@ -1,5 +1,11 @@
 import { DataBusesListItem } from "./models";
 
+export type BusScheduleDayLineMap = Map<number, string[]>;
+
+export function convertKeyToNumber(entry: [string, any]): [number, any]{
+    return [+entry[0], entry[1]];
+};
+
 export class BusScheduleStop {
     stopId: string;
     hour: number;
@@ -41,13 +47,11 @@ export class BusLine {
         return this;
     }
 
-    addDays(days: number[]): void {
-        this.days.push(...days);
-    }
-
-    addDaysSelf(days: number[]): BusLine {
-        this.addDays(days);
-        return this;
+    addDay(day: number): void {
+        if (this.days.includes(day)) {
+            throw new Error("Duplicate day "+ day + " in busLine ID"+ this.id);
+        }
+        this.days.push(day);
     }
 
     toJSON(): DataBusesListItem {
@@ -86,13 +90,32 @@ export class BusLine {
 };
 
 export class BusesDestList {
-    items: BusLine[] = [];
+    idMap: Map<string, BusLine>;
+
+    constructor() {
+        this.idMap = new Map();
+    }
 
     push(item: BusLine): void {
-        this.items.push(item);
+        if (this.idMap.has(item.id)) {
+            throw new Error("bus ID already existed: " + item.id);
+        }
+        this.idMap.set(item.id, item);
+    }
+
+    getById(busId: string): BusLine {
+        return this.idMap.get(busId);
+    }
+
+    applySchedule(schedule: BusScheduleDayLineMap): void {
+        schedule.forEach((idList, day) => {
+            idList.forEach(busId => {
+                this.getById(busId).addDay(day);
+            });
+        });
     }
 
     toJSON(): DataBusesListItem[] {
-        return this.items.map(item => item.toJSON());
+        return Array.from(this.idMap.values()).map(item => item.toJSON());
     }
 };

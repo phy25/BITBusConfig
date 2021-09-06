@@ -41,8 +41,16 @@ describe('real file test', () => {
             expect(actual.buses).toEqual(expected.buses);
         });
 
+        test.skip('buses.ZGC2LX with days', () => {
+            expect(actual.buses.ZGC2LX).toEqual(expected.buses.ZGC2LX);
+        });
+
         test('buses.ZGC2LX without days', () => {
             expect(actual.buses.ZGC2LX.map(dropDays)).toEqual(expected.buses.ZGC2LX.map(dropDays));
+        });
+
+        test.skip('buses.LX2ZGC with days', () => {
+            expect(actual.buses.LX2ZGC).toEqual(expected.buses.LX2ZGC);
         });
 
         test('buses.LX2ZGC without days', () => {
