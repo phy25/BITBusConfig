@@ -1,6 +1,8 @@
 import { BusesDestList, BusLine, BusScheduleStop } from "../src/modelsBuses";
 import { DataBusesDestList } from "../src/models";
 
+import * as scheduleZGC2LX from "./scheduleZGC2LX";
+
 export const data: DataBusesDestList = new BusesDestList();
 
 export function getData(lang: string): DataBusesDestList {
@@ -145,3 +147,5 @@ data.push(new BusLine("H2OZ2", 3, 1).addStopsSelf([
     new BusScheduleStop("LXS", 19, 30, 0),
     new BusScheduleStop("LXL", 19, 33, 1),
 ])); //days: [10,11,12,13,14,15,19,31,32,33,34,35,39,41,42,43,44,45]
+
+data.applySchedule(scheduleZGC2LX.data);

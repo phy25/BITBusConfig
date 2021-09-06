@@ -37,11 +37,11 @@ describe('real file test', () => {
             expect(actual.weekdays).toEqual(expected.weekdays);
         });
 
-        test.skip('buses object', () => {
+        test('buses object', () => {
             expect(actual.buses).toEqual(expected.buses);
         });
 
-        test.skip('buses.ZGC2LX with days', () => {
+        test('buses.ZGC2LX with days', () => {
             expect(actual.buses.ZGC2LX).toEqual(expected.buses.ZGC2LX);
         });
 
@@ -49,7 +49,7 @@ describe('real file test', () => {
             expect(actual.buses.ZGC2LX.map(dropDays)).toEqual(expected.buses.ZGC2LX.map(dropDays));
         });
 
-        test.skip('buses.LX2ZGC with days', () => {
+        test('buses.LX2ZGC with days', () => {
             expect(actual.buses.LX2ZGC).toEqual(expected.buses.LX2ZGC);
         });
 
@@ -73,7 +73,7 @@ describe('real file test', () => {
             expect(actual.lang).toEqual(expected.lang);
         });
 
-        test.skip('whole object', () => {
+        test('whole object', () => {
             expect(actual).toEqual(expected);
         });
     });
