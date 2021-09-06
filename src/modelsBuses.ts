@@ -1,6 +1,13 @@
 import { DataBusesListItem } from "./models";
 
-export type BusScheduleDayLineMap = Map<number, string[]>;
+export class BusScheduleDayLineMap extends Map<number, string[]> {
+    add(key: number, value: string[]) {
+        if (this.has(key)) {
+            throw new Error("Map already has the key " + key);
+        }
+        this.set(key, value);
+    }
+}
 
 export function convertKeyToNumber(entry: [string, any]): [number, any]{
     return [+entry[0], entry[1]];
@@ -110,7 +117,11 @@ export class BusesDestList {
     applySchedule(schedule: BusScheduleDayLineMap): void {
         schedule.forEach((idList, day) => {
             idList.forEach(busId => {
-                this.getById(busId).addDay(day);
+                let busLine: BusLine = this.getById(busId);
+                if (!busLine) {
+                    throw new Error("busId does not exist: " + busId);
+                }
+                busLine.addDay(day);
             });
         });
     }

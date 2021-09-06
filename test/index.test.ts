@@ -15,6 +15,15 @@ describe('real file test', () => {
         beforeAll(async () => {
             expected = require(file);
             actual = JSON.parse(JSON.stringify(await generateFile(lang)));
+
+            // sort actual days schedule
+            for (let direction in actual.buses) {
+                actual.buses[direction].forEach((busItem: any) => {
+                    if (busItem.days) {
+                        busItem.days.sort((a: number, b: number) => a - b);
+                    }
+                });
+            }
         });
 
         test('top-level metadata', () => {

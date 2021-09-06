@@ -70,7 +70,7 @@ describe('BusesDestList', () => {
         underTest.push(L1);
         underTest.push(L2);
 
-        let scheduleMap: BusScheduleDayLineMap = new Map(Object.entries({
+        let scheduleMap: BusScheduleDayLineMap = new BusScheduleDayLineMap(Object.entries({
             0: ["L1"],
             1: ["L2"],
             2: [],
