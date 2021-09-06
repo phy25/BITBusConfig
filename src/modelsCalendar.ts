@@ -1,6 +1,7 @@
 import { DataBusPatternCalendarByMonth } from "./models";
 import { BusPatternCalendarWeeklyScheduleRule, BusPatternCalendarDayOverridesYearSingletonRule, BusPatternCalendarRule } from "./modelsCalendarRules";
 import { BusPatternSchedule, getLocalDateFromString, MILLISECONDS_IN_DAY } from "./modelsDataType";
+import { ScheduleDays } from "../data/scheduleDays";
 
 export class BusPatternCalendarYear {
     year: number;
@@ -199,5 +200,19 @@ export class BITBusPatternCalendarYear extends BusPatternCalendarYear {
 
         this.addRule(new BusPatternCalendarWeeklyScheduleRule(
             startLocalDate, endLocalDate, weeklySchedule, executionOrder));
+    }
+
+    /**
+     * Convert to calendar entry, and enforce scheduleDays rule.
+     * @returns DataBusPatternCalendarByMonth
+     */
+    toCalendar(failOnNoResult: boolean): DataBusPatternCalendarByMonth {
+        let result = super.toCalendar(failOnNoResult);
+        result.forEach(m => {m.forEach(d => {
+            if (!(d in ScheduleDays)) {
+                throw new Error("Value not in ScheduleDays: " + d);
+            }
+        })});
+        return result;
     }
 };
