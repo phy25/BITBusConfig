@@ -12,7 +12,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "node --unhandled-rejections=strict -r ts-node/register src/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "test:nosnapshot": "jest --config jest-nosnapshot.config.js"
   },
   "author": "Phy25",
   "license": "MIT",
