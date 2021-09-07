@@ -1,0 +1,52 @@
+name: Test Build & Deploy
+on: [push, pull_request]
+jobs:
+  snapshot-test:
+    name: Jest Snapshot Test
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'npm'
+      - run: npm install
+      - run: npm run test:snapshot
+  unit-test-build:
+    name: Unit test and build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'npm'
+      - run: npm install
+      - name: Unit test
+        run: npm run test:nosnapshot
+      - name: Build
+        run: npm run build
+      - name: Upload output files
+        uses: actions/upload-artifact@v2
+        with:
+          name: output-json
+          path: build/*.json
+          if-no-files-found: error
+  deploy:
+    name: Deploy
+    if: ${{ github.event_name == 'push' && github.ref	== 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    needs: unit-test-build
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'npm'
+      - run: npm install
+      - name: Download output files
+        uses: actions/download-artifact@v2
+        with:
+          name: output-json
+          path: ./build
