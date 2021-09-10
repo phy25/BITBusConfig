@@ -50,3 +50,6 @@ jobs:
         with:
           name: output-json
           path: ./build
+      - run: npm run deploy
+        env:
+          BB_TOKEN: ${{ secrets.BB_TOKEN }}
