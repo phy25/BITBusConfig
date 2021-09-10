@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import { generateFile } from './build';
+import * as versionData from '../data/version';
 
 async function buildFile(lang: string): Promise<string> {
     const json = await generateFile(lang);
@@ -10,8 +11,9 @@ async function buildFile(lang: string): Promise<string> {
 
 export async function build(): Promise<string[]> {
     let paths = [];
-    paths.push(await buildFile("zh"));
-    paths.push(await buildFile("en"));
+    for (let i in versionData.lang) {
+        paths.push(await buildFile(versionData.lang[i]));
+    }
     return paths;
 }
 

@@ -2,8 +2,10 @@
   "devDependencies": {
     "@types/jest": "^26.0.24",
     "@types/node": "^16.4.13",
+    "@types/node-fetch": "^2.5.12",
     "jest": "^27.0.6",
     "jest-html-reporter": "^3.4.1",
+    "node-fetch": "^2.6.2",
     "ts-jest": "^27.0.4",
     "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
@@ -12,6 +14,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "node --unhandled-rejections=strict -r ts-node/register src/index.ts",
+    "deploy": "node --unhandled-rejections=strict -r ts-node/register src/deploy.ts",
     "test": "jest",
     "test:snapshot": "jest --config jest-snapshot.config.js",
     "test:nosnapshot": "jest --config jest-nosnapshot.config.js"
