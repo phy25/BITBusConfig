@@ -4,7 +4,7 @@ A hopefully small repo as an attempt to modernlize how (the legacy) BITBus WeCha
 
 Built with NodeJS, TypeScript, Jest.
 
-Believe it or not, previously it was a process of handcrafting JSON with some helper JavaScript snippet.
+Believe it or not, previously it was a process of handcrafting JSON [with some helper JavaScript snippet](tools/legacy-datagen.js).
 
 ## Commands
 
