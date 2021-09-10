@@ -9,7 +9,7 @@ Believe it or not, previously it was a process of handcrafting JSON with some he
 ## Commands
 
 - `npm run build` generate compliant JSON in `build` folder
-- (TODO) `npm run deploy` deploy updated JSON to Tencent Cloud for WeChat Mini Program
+- `npm run deploy` deploy updated JSON to Tencent Cloud for WeChat Mini Program (`BB_TOKEN` environment variable required)
 - `npm test` run test suite of the scripts and snapshot tests
   - `npm run test:nosnapshot` to only run unit tests
   - `npm run test:snapshot` to only run snapshot tests
