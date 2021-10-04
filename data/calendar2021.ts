@@ -7,14 +7,17 @@ export const data = new BITBusPatternCalendarYear(2021);
 
 data.addSemesterRules(
     getLocalDateFromString('2021-01-31'),
-    getLocalDateFromString('2021-02-27'), // should be corrected to 02-26
+    getLocalDateFromString('2021-02-26'),
     getLocalDateFromString('2021-07-04'),
-    getLocalDateFromString('2021-08-28'), // should be corrected to 08-20
+    getLocalDateFromString('2021-08-20'),
     SchedulePatterns.V4_H2O_WORKWEEK,
     SchedulePatterns.V4_HOLIDAYS,
 );
 
 data.addHolidayOverride(getLocalDateFromString('2021-01-01'), ScheduleDays.V1_HOLIDAY);
+
+// missing v6 https://hqjjc.bit.edu.cn/tzgg/9850bf8b5d824241b64c109e266eb2f3.htm
+
 // missing LX subway https://www.bit.edu.cn/tzgg17/ggxx/6808acbfb5e4472da69b2c0d57fc42ec.htm
 
 // missing holidays
@@ -25,7 +28,14 @@ data.addHolidayOverride(getLocalDateFromString('2021-01-01'), ScheduleDays.V1_HO
 
 // missing summer semester https://www.bit.edu.cn/tzgg17/ggxx/09cbbcd091f64ba8a6bce9d7bdc820eb.htm
 
+// missing v7 https://www.bit.edu.cn/tzgg17/ggxx/afcd9723d01349219a7054b0628f0240.htm
+
 data.addLongHolidayRules(
-    getLocalDateFromString('2021-10-01'), getLocalDateFromString('2021-10-07'), ScheduleDays.V1_HOLIDAY, null,
+    getLocalDateFromString('2021-09-19'), getLocalDateFromString('2021-09-21'), ScheduleDays.V3_WEEKEND, null,
+    [getLocalDateFromString('2021-09-21')], ScheduleDays.V1_HOLIDAY,
+);
+data.addWeekdayOverride(getLocalDateFromString('2021-09-26'), ScheduleDays.V4_H2O_FRIDAY);
+data.addLongHolidayRules(
+    getLocalDateFromString('2021-10-01'), getLocalDateFromString('2021-10-10'), ScheduleDays.V1_HOLIDAY, null,
     [], ScheduleDays.V1_HOLIDAY,
 );

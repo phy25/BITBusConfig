@@ -7,7 +7,7 @@ import * as busPatternCalendar2021 from "./calendar2021";
 
 export const dayRanges = [
     "2017-01-01",
-    "2021-08-27"
+    "2021-12-31"
 ];
 
 export const busPatternCalendar: DataBusPatternCalendarByYear = {

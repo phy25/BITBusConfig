@@ -1,2 +1,2 @@
 export const lang: string[] = ['zh', 'en'];
-export const data: number = 20210412;
+export const data: number = 20210413;

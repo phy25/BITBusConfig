@@ -41,4 +41,24 @@ export enum ScheduleDays {
     V4_H2O_WEDNESDAY = 43,
     V4_H2O_THURSDAY = 44,
     V4_H2O_FRIDAY = 45,
+    V4_WORKDAY = 40,
+    // v4 2020 reduced
+    V4_REDUCED_WORKDAY = 48,
+    // v4 2020 orientation
+    V4_ORIENTATION_DAY = 47,
+    // v5 + H2O (LXE)
+    V5_H2O_MONDAY = 51,
+    V5_H2O_TUESDAY = 52,
+    V5_H2O_WEDNESDAY = 53,
+    V5_H2O_THURSDAY = 54,
+    V5_H2O_FRIDAY = 55,
+    // v5 enhanced weekend
+    V5_WEEKEND = 56,
+    // v6 + H2O (adjusted class timetable and increased service level)
+    V6_H2O_MONDAY = 61,
+    V6_H2O_TUESDAY = 62,
+    V6_H2O_WEDNESDAY = 63,
+    V6_H2O_THURSDAY = 64,
+    V6_H2O_FRIDAY = 65,
+    V6_H2O_WEEKEND = 66, // = holiday
 };

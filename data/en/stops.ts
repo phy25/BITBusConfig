@@ -12,7 +12,7 @@ export const data: DataStops = {
     },
     "LXS": {
         "name": "Liangxiang (S.)",
-        "desc": "South campus, northwest of Chemistry Experiment Center Bld (\"Armored Car Roundabout\")",
+        "desc": "Southwest campus, northwest of Chemistry Experiment Center Bld (\"Armored Car Roundabout\")",
         "image": "https://s.seethediff.cn/projects/bitbus/images/LXS.jpg",
         "tencentLatlng": [
             39.728495,
@@ -21,16 +21,26 @@ export const data: DataStops = {
     },
     "LXN": {
         "name": "Liangxiang (N.)",
-        "desc": "North campus, southeast of Campus Hospital",
+        "desc": "Northwest campus, southeast of Campus Hospital (boarding only for faculty and staff)",
         "image": "https://s.seethediff.cn/projects/bitbus/images/LXN.jpg",
         "tencentLatlng": [
             39.733182,
             116.170002
         ]
     },
+    // https://hqjjc.bit.edu.cn/tzgg/b188157.htm
+    "LXE": {
+        "name": "Liangxiang (E.)",
+        "desc": "Northwest campus, inside east gate (boarding only for faculty and staff)",
+        "image": "",
+        "tencentLatlng": [
+            39.73265,
+            116.172361
+        ]
+    },
     "LXL": {
         "name": "Liangxiang (Lib)",
-        "desc": "North campus, Xuteli Library west main gate",
+        "desc": "Northwest campus, Xuteli Library west main gate",
         "image": "",
         "tencentLatlng": [
             39.731717,

@@ -44,7 +44,7 @@ export class BusPatternCalendarYear {
 
             if (schedule === null) {
                 if (failOnNoResult) {
-                    throw new Error("No schedule for" + localDate);
+                    throw new Error("No schedule for " + localDate);
                 }
             }
             calendar[localDate.getMonth()][localDate.getDate() - 1] = schedule;

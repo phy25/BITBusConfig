@@ -35,3 +35,16 @@ data.add(ScheduleDays.V4_H2O_TUESDAY,       ["L1", "L2", "L3", "L4", "L5", "L6",
 data.add(ScheduleDays.V4_H2O_WEDNESDAY,     ["L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8", "L9", "L21", "L31", "H2OL1", "H2OL3"]);
 data.add(ScheduleDays.V4_H2O_THURSDAY,      ["L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8", "L9", "L21", "L31", "H2OL1", "H2OL3"]);
 data.add(ScheduleDays.V4_H2O_FRIDAY,        ["L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8", "L9", "L21", "L31", "H2OL1", "H2OL3"]);
+data.add(ScheduleDays.V4_WORKDAY,           ["L1", "L2", "L3", "L4", "L5", "L6", "L7", "L8", "L9", "L21", "L31"]);
+
+data.add(ScheduleDays.V4_REDUCED_WORKDAY,   ["L2", "L4", "L31"]);
+data.add(ScheduleDays.V4_ORIENTATION_DAY,   ["L1", "L2", "L4", "L31", "L9"]);
+
+// with LXE
+data.add(ScheduleDays.V5_H2O_MONDAY,        ["L51", "L52", "L53", "L54", "L55", "L56", "L57", "L58", "L59", "L60", "L61", "H2OL1", "H2OL3"]);
+data.add(ScheduleDays.V5_H2O_TUESDAY,       ["L51", "L52", "L53", "L54", "L55", "L56", "L57", "L58", "L59", "L60", "L61", "H2OL1", "H2OL3"]);
+data.add(ScheduleDays.V5_H2O_WEDNESDAY,     ["L51", "L52", "L53", "L54", "L55", "L56", "L57", "L58", "L59", "L60", "L61", "H2OL1", "H2OL3"]);
+data.add(ScheduleDays.V5_H2O_THURSDAY,      ["L51", "L52", "L53", "L54", "L55", "L56", "L57", "L58", "L59", "L60", "L61", "H2OL1", "H2OL3"]);
+data.add(ScheduleDays.V5_H2O_FRIDAY,        ["L51", "L52", "L53", "L54", "L55", "L56", "L57", "L58", "L59", "L60", "L61", "H2OL1", "H2OL3"]);
+
+data.add(ScheduleDays.V5_WEEKEND,           ["L11", "L12", "L13", "L16", "L17"]);

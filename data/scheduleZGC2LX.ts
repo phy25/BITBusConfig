@@ -34,3 +34,15 @@ data.add(ScheduleDays.V4_H2O_TUESDAY,       ["Z1", "Z2", "Z3", "Z5", "Z6", "Z7",
 data.add(ScheduleDays.V4_H2O_WEDNESDAY,     ["Z1", "Z2", "Z3", "Z5", "Z6", "Z7", "Z8", "Z9", "Z22", "Z31", "H2OZ1", "H2OZ2"]);
 data.add(ScheduleDays.V4_H2O_THURSDAY,      ["Z1", "Z2", "Z3", "Z5", "Z6", "Z7", "Z8", "Z9", "Z22", "Z31", "H2OZ1", "H2OZ2"]);
 data.add(ScheduleDays.V4_H2O_FRIDAY,        ["Z1", "Z2", "Z3", "Z5", "Z6", "Z7", "Z8", "Z9", "Z22", "Z31", "H2OZ1", "H2OZ2"]);
+data.add(ScheduleDays.V4_WORKDAY,           ["Z1", "Z2", "Z3", "Z5", "Z6", "Z7", "Z8", "Z9", "Z22", "Z31"]);
+
+data.add(ScheduleDays.V4_REDUCED_WORKDAY,   ["Z2", "Z5", "Z31"]);
+data.add(ScheduleDays.V4_ORIENTATION_DAY,   ["Z1", "Z2", "Z5", "Z31", "Z9"]);
+
+data.add(ScheduleDays.V5_H2O_MONDAY,        ["Z51", "Z52", "Z53", "Z54", "Z55", "Z56", "Z57", "Z58", "Z59", "Z60", "H2OZ1", "H2OZ2"]);
+data.add(ScheduleDays.V5_H2O_TUESDAY,       ["Z51", "Z52", "Z53", "Z54", "Z55", "Z56", "Z57", "Z58", "Z59", "Z60", "H2OZ1", "H2OZ2"]);
+data.add(ScheduleDays.V5_H2O_WEDNESDAY,     ["Z51", "Z52", "Z53", "Z54", "Z55", "Z56", "Z57", "Z58", "Z59", "Z60", "H2OZ1", "H2OZ2"]);
+data.add(ScheduleDays.V5_H2O_THURSDAY,      ["Z51", "Z52", "Z53", "Z54", "Z55", "Z56", "Z57", "Z58", "Z59", "Z60", "H2OZ1", "H2OZ2"]);
+data.add(ScheduleDays.V5_H2O_FRIDAY,        ["Z51", "Z52", "Z53", "Z54", "Z55", "Z56", "Z57", "Z58", "Z59", "Z60", "H2OZ1", "H2OZ2"]);
+
+data.add(ScheduleDays.V5_WEEKEND,           ["Z11", "Z12", "Z13", "Z16", "Z17"]);

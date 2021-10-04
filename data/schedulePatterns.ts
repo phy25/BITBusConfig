@@ -47,3 +47,28 @@ export const V4_H2O_EXAMWEEK = [
 ];
 
 export const V4_HOLIDAYS = V1_HOLIDAYS;
+
+// 2020 reduced schedule https://www.bit.edu.cn/ggfw/bcfw/a185006.htm
+export const V4_REDUCED_WORKWEEK = [
+    ScheduleDays.V1_HOLIDAY, ScheduleDays.V4_REDUCED_WORKDAY, ScheduleDays.V4_REDUCED_WORKDAY, ScheduleDays.V4_REDUCED_WORKDAY,
+    ScheduleDays.V4_REDUCED_WORKDAY, ScheduleDays.V4_REDUCED_WORKDAY, ScheduleDays.V1_HOLIDAY
+];
+
+export const V4_REDUCED_HOLIDAYS = [
+    ScheduleDays.V1_HOLIDAY, ScheduleDays.V1_HOLIDAY, ScheduleDays.V1_HOLIDAY, ScheduleDays.V1_HOLIDAY,
+    ScheduleDays.V1_HOLIDAY, ScheduleDays.V1_HOLIDAY, ScheduleDays.V1_HOLIDAY
+];
+
+// https://www.bit.edu.cn/ggfw/bcfw/a190824.htm
+export const V5_H2O_WORKWEEK = [
+    ScheduleDays.V3_WEEKEND, ScheduleDays.V5_H2O_MONDAY, ScheduleDays.V5_H2O_TUESDAY, ScheduleDays.V5_H2O_WEDNESDAY,
+    ScheduleDays.V5_H2O_THURSDAY, ScheduleDays.V5_H2O_FRIDAY, ScheduleDays.V3_WEEKEND
+];
+
+// https://hqjjc.bit.edu.cn/tzgg/b188157.htm
+export const V5_H2O_WORKWEEK_PLUSWEEKEND = [
+    ScheduleDays.V5_WEEKEND, ScheduleDays.V5_H2O_MONDAY, ScheduleDays.V5_H2O_TUESDAY, ScheduleDays.V5_H2O_WEDNESDAY,
+    ScheduleDays.V5_H2O_THURSDAY, ScheduleDays.V5_H2O_FRIDAY, ScheduleDays.V5_WEEKEND
+];
+
+export const V5_HOLIDAYS = V1_HOLIDAYS;
