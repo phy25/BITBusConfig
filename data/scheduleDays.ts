@@ -54,11 +54,20 @@ export enum ScheduleDays {
     V5_H2O_FRIDAY = 55,
     // v5 enhanced weekend
     V5_WEEKEND = 56,
-    // v6 + H2O (adjusted class timetable and increased service level)
+    // v6 + H2O
     V6_H2O_MONDAY = 61,
     V6_H2O_TUESDAY = 62,
     V6_H2O_WEDNESDAY = 63,
     V6_H2O_THURSDAY = 64,
     V6_H2O_FRIDAY = 65,
-    V6_H2O_WEEKEND = 66, // = holiday
+    V6_SPORTSDAY = 67,
+    V6_H2O_EXAMDAY = 67,
+    V6_H2O_SUMMERDAY = 69,
+    // v7 + H20
+    V7_H2O_MONDAY = 71,
+    V7_H2O_TUESDAY = 72,
+    V7_H2O_WEDNESDAY = 73,
+    V7_H2O_THURSDAY = 74,
+    V7_H2O_FRIDAY = 75,
+    V7_WEEKEND = 76,
 };

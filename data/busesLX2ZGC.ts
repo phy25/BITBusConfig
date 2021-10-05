@@ -92,6 +92,11 @@ data.push(new BusLine("L17", 1, 1).addStopsSelf([
     new BusScheduleStop("ZGC", 7, 20, 0),
 ]));
 
+data.push(new BusLine("L18", 1, 1).addStopsSelf([
+    new BusScheduleStop("LXS", 18, 30, 0),
+    new BusScheduleStop("ZGC", 19, 20, 0),
+]));
+
 data.push(new BusLine("L11", 1, 1).addStopsSelf([
     new BusScheduleStop("LXS", 8, 30, 0),
     new BusScheduleStop("ZGC", 9, 20, 0),
@@ -140,6 +145,18 @@ data.push(new BusLine("H2OL3", 3, 1).addStopsSelf([
     new BusScheduleStop("LXS", 15, 20, 0),
     new BusScheduleStop("ZGC", 16, 20, 0),
 ])); //days: [30,31,32,33,34,35,39,41,42,43,44,45]
+
+data.push(new BusLine("H2OL4", 3, 1).addStopsSelf([
+    new BusScheduleStop("LXL", 7, 28, 1),
+    new BusScheduleStop("LXS", 7, 30, 0),
+    new BusScheduleStop("ZGC", 8, 30, 0),
+]));
+
+data.push(new BusLine("H2OL5", 3, 1).addStopsSelf([
+    new BusScheduleStop("LXL", 12, 58, 1),
+    new BusScheduleStop("LXS", 13, 0, 0),
+    new BusScheduleStop("ZGC", 14, 0, 0),
+]));
 
 data.push(new BusLine("L51", 0, 1).addStopsSelf([
     new BusScheduleStop("LXE", 6, 12, 1),
@@ -217,6 +234,48 @@ data.push(new BusLine("L61", 1, 1).addStopsSelf([
     new BusScheduleStop("LXS", 17, 20, 0),
     new BusScheduleStop("ZGC", 18, 20, 0),
 ])); //days: [41,42,43,44,45]
+
+data.push(new BusLine("L62", 1, 1).addStopsSelf([
+    new BusScheduleStop("LXE", 12, 22, 1),
+    new BusScheduleStop("LXN", 12, 25, 1),
+    new BusScheduleStop("LXS", 12, 30, 0),
+    new BusScheduleStop("ZGC", 13, 30, 0),
+]));
+
+data.push(new BusLine("L63", 1, 1).addStopsSelf([
+    new BusScheduleStop("LXE", 19, 52, 1),
+    new BusScheduleStop("LXN", 19, 55, 1),
+    new BusScheduleStop("LXS", 20, 0, 0),
+    new BusScheduleStop("ZGC", 21, 0, 0),
+]));
+
+data.push(new BusLine("L64", 0, 1).addStopsSelf([
+    new BusScheduleStop("LXE", 8, 52, 1),
+    new BusScheduleStop("LXN", 8, 55, 1),
+    new BusScheduleStop("LXS", 9, 0, 0),
+    new BusScheduleStop("ZGC", 10, 0, 0),
+]));
+
+data.push(new BusLine("L65", 0, 1).addStopsSelf([
+    new BusScheduleStop("LXE", 15, 52, 1),
+    new BusScheduleStop("LXN", 15, 55, 1),
+    new BusScheduleStop("LXS", 16, 0, 0),
+    new BusScheduleStop("ZGC", 17, 0, 0),
+]));
+
+data.push(new BusLine("L66", 0, 1).addStopsSelf([
+    new BusScheduleStop("LXE", 20, 22, 1),
+    new BusScheduleStop("LXN", 20, 25, 1),
+    new BusScheduleStop("LXS", 20, 30, 0),
+    new BusScheduleStop("ZGC", 21, 20, 0),
+]));
+
+data.push(new BusLine("L67", 0, 1).addStopsSelf([
+    new BusScheduleStop("LXE", 18, 52, 1),
+    new BusScheduleStop("LXN", 18, 55, 1),
+    new BusScheduleStop("LXS", 19, 0, 0),
+    new BusScheduleStop("ZGC", 20, 0, 0),
+]));
 
 // should always be the last line
 data.applySchedule(scheduleLX2ZGC.data);

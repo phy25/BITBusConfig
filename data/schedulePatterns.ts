@@ -71,4 +71,22 @@ export const V5_H2O_WORKWEEK_PLUSWEEKEND = [
     ScheduleDays.V5_H2O_THURSDAY, ScheduleDays.V5_H2O_FRIDAY, ScheduleDays.V5_WEEKEND
 ];
 
-export const V5_HOLIDAYS = V1_HOLIDAYS;
+export const V5_HOLIDAYS: ScheduleDays[] = Array(7).fill(ScheduleDays.V5_WEEKEND);
+
+// https://hqjjc.bit.edu.cn/tzgg/9850bf8b5d824241b64c109e266eb2f3.htm
+export const V6_H2O_WORKWEEK = [
+    ScheduleDays.V5_WEEKEND, ScheduleDays.V6_H2O_MONDAY, ScheduleDays.V6_H2O_TUESDAY, ScheduleDays.V6_H2O_WEDNESDAY,
+    ScheduleDays.V6_H2O_THURSDAY, ScheduleDays.V6_H2O_FRIDAY, ScheduleDays.V5_WEEKEND
+];
+
+export const V6_HOLIDAYS = V5_HOLIDAYS;
+
+export const V6_H2O_SUMMERWEEK: ScheduleDays[] = Array(7).fill(ScheduleDays.V6_H2O_SUMMERDAY);
+
+export const V7_H2O_WORKWEEK = [
+    ScheduleDays.V7_WEEKEND, ScheduleDays.V7_H2O_MONDAY, ScheduleDays.V7_H2O_TUESDAY, ScheduleDays.V7_H2O_WEDNESDAY,
+    ScheduleDays.V7_H2O_THURSDAY, ScheduleDays.V7_H2O_FRIDAY, ScheduleDays.V7_WEEKEND
+];
+
+export const V7_HOLIDAYS: ScheduleDays[] = Array(7).fill(ScheduleDays.V7_WEEKEND);
+

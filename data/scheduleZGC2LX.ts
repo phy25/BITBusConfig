@@ -46,3 +46,19 @@ data.add(ScheduleDays.V5_H2O_THURSDAY,      ["Z51", "Z52", "Z53", "Z54", "Z55", 
 data.add(ScheduleDays.V5_H2O_FRIDAY,        ["Z51", "Z52", "Z53", "Z54", "Z55", "Z56", "Z57", "Z58", "Z59", "Z60", "H2OZ1", "H2OZ2"]);
 
 data.add(ScheduleDays.V5_WEEKEND,           ["Z11", "Z12", "Z13", "Z16", "Z17"]);
+
+data.add(ScheduleDays.V6_H2O_MONDAY,        ["Z51", "Z52", "Z53", "Z55", "Z56", "Z57", "Z58", "Z59", "Z60", "Z61", "H2OZ1", "H2OZ2", "H2OZ3", "H2OZ4"]);
+data.add(ScheduleDays.V6_H2O_TUESDAY,       ["Z51", "Z52", "Z53", "Z55", "Z56", "Z57", "Z58", "Z59", "Z60", "Z61", "H2OZ1", "H2OZ2", "H2OZ3", "H2OZ4"]);
+data.add(ScheduleDays.V6_H2O_WEDNESDAY,     ["Z51", "Z52", "Z53", "Z55", "Z56", "Z57", "Z58", "Z59", "Z60", "Z61", "H2OZ1", "H2OZ2", "H2OZ3", "H2OZ4"]);
+data.add(ScheduleDays.V6_H2O_THURSDAY,      ["Z51", "Z52", "Z53", "Z55", "Z56", "Z57", "Z58", "Z59", "Z60", "Z61", "H2OZ1", "H2OZ2", "H2OZ3", "H2OZ4"]);
+data.add(ScheduleDays.V6_H2O_FRIDAY,        ["Z51", "Z52", "Z53", "Z55", "Z56", "Z57", "Z58", "Z59", "Z60", "Z61", "H2OZ1", "H2OZ2", "H2OZ3", "H2OZ4"]);
+
+data.add(ScheduleDays.V6_H2O_SUMMERDAY,     ["Z52", "H2OZ1", "H2OZ3", "Z62", "H2OZ4", "H2OZ2", "Z63"]);
+
+data.add(ScheduleDays.V7_H2O_MONDAY,        ["Z51", "Z64", "Z52", "Z53", "Z54", "Z61", "Z55", "Z56", "Z59", "Z65", "Z60", "Z58", "H2OZ1", "H2OZ5", "H2OZ4", "H2OZ6"]);
+data.add(ScheduleDays.V7_H2O_TUESDAY,       ["Z51", "Z64", "Z52", "Z53", "Z54", "Z61", "Z55", "Z56", "Z59", "Z65", "Z60", "Z58", "H2OZ1", "H2OZ5", "H2OZ4", "H2OZ6"]);
+data.add(ScheduleDays.V7_H2O_WEDNESDAY,     ["Z51", "Z64", "Z52", "Z53", "Z54", "Z61", "Z55", "Z56", "Z59", "Z65", "Z60", "Z58", "H2OZ1", "H2OZ5", "H2OZ4", "H2OZ6"]);
+data.add(ScheduleDays.V7_H2O_THURSDAY,      ["Z51", "Z64", "Z52", "Z53", "Z54", "Z61", "Z55", "Z56", "Z59", "Z65", "Z60", "Z58", "H2OZ1", "H2OZ5", "H2OZ4", "H2OZ6"]);
+data.add(ScheduleDays.V7_H2O_FRIDAY,        ["Z51", "Z64", "Z52", "Z53", "Z54", "Z61", "Z55", "Z56", "Z59", "Z65", "Z60", "Z58", "H2OZ1", "H2OZ5", "H2OZ4", "H2OZ6"]);
+
+data.add(ScheduleDays.V7_WEEKEND,           ["Z11", "Z18", "Z12", "Z17", "Z13", "Z16"]);

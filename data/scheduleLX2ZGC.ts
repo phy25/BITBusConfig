@@ -48,3 +48,19 @@ data.add(ScheduleDays.V5_H2O_THURSDAY,      ["L51", "L52", "L53", "L54", "L55", 
 data.add(ScheduleDays.V5_H2O_FRIDAY,        ["L51", "L52", "L53", "L54", "L55", "L56", "L57", "L58", "L59", "L60", "L61", "H2OL1", "H2OL3"]);
 
 data.add(ScheduleDays.V5_WEEKEND,           ["L11", "L12", "L13", "L16", "L17"]);
+
+data.add(ScheduleDays.V6_H2O_MONDAY,        ["L51", "L52", "L53", "L54", "L56", "L57", "L58", "L59", "L61", "L62", "L63", "H2OL1", "H2OL3", "H2OL4", "H2OL5"]);
+data.add(ScheduleDays.V6_H2O_TUESDAY,       ["L51", "L52", "L53", "L54", "L56", "L57", "L58", "L59", "L61", "L62", "L63", "H2OL1", "H2OL3", "H2OL4", "H2OL5"]);
+data.add(ScheduleDays.V6_H2O_WEDNESDAY,     ["L51", "L52", "L53", "L54", "L56", "L57", "L58", "L59", "L61", "L62", "L63", "H2OL1", "H2OL3", "H2OL4", "H2OL5"]);
+data.add(ScheduleDays.V6_H2O_THURSDAY,      ["L51", "L52", "L53", "L54", "L56", "L57", "L58", "L59", "L61", "L62", "L63", "H2OL1", "H2OL3", "H2OL4", "H2OL5"]);
+data.add(ScheduleDays.V6_H2O_FRIDAY,        ["L51", "L52", "L53", "L54", "L56", "L57", "L58", "L59", "L61", "L62", "L63", "H2OL1", "H2OL3", "H2OL4", "H2OL5"]);
+
+data.add(ScheduleDays.V6_H2O_SUMMERDAY,     ["H2OL1", "H2OL4", "L64", "H2OL5", "H2OL3", "L65", "L66"]);
+
+data.add(ScheduleDays.V7_H2O_MONDAY,        ["L51", "L52", "L53", "L54", "L62", "L56", "L57", "L61", "L58", "L67", "L63", "L59", "H2OL1", "H2OL4", "H2OL5", "H2OL3"]);
+data.add(ScheduleDays.V7_H2O_TUESDAY,       ["L51", "L52", "L53", "L54", "L62", "L56", "L57", "L61", "L58", "L67", "L63", "L59", "H2OL1", "H2OL4", "H2OL5", "H2OL3"]);
+data.add(ScheduleDays.V7_H2O_WEDNESDAY,     ["L51", "L52", "L53", "L54", "L62", "L56", "L57", "L61", "L58", "L67", "L63", "L59", "H2OL1", "H2OL4", "H2OL5", "H2OL3"]);
+data.add(ScheduleDays.V7_H2O_THURSDAY,      ["L51", "L52", "L53", "L54", "L62", "L56", "L57", "L61", "L58", "L67", "L63", "L59", "H2OL1", "H2OL4", "H2OL5", "H2OL3"]);
+data.add(ScheduleDays.V7_H2O_FRIDAY,        ["L51", "L52", "L53", "L54", "L62", "L56", "L57", "L61", "L58", "L67", "L63", "L59", "H2OL1", "H2OL4", "H2OL5", "H2OL3"]);
+
+data.add(ScheduleDays.V7_WEEKEND,           ["L17", "L16", "L11", "L12", "L18", "L13"]);
