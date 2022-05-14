@@ -64,3 +64,5 @@ data.add(ScheduleDays.V7_H2O_THURSDAY,      ["L51", "L52", "L53", "L54", "L62", 
 data.add(ScheduleDays.V7_H2O_FRIDAY,        ["L51", "L52", "L53", "L54", "L62", "L56", "L57", "L61", "L58", "L67", "L63", "L59", "H2OL1", "H2OL4", "H2OL5", "H2OL3"]);
 
 data.add(ScheduleDays.V7_WEEKEND,           ["L17", "L16", "L11", "L12", "L18", "L13"]);
+
+data.add(ScheduleDays.SERVICE_SUSPENDED,    []);

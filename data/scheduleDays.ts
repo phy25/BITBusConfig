@@ -70,4 +70,6 @@ export enum ScheduleDays {
     V7_H2O_THURSDAY = 74,
     V7_H2O_FRIDAY = 75,
     V7_WEEKEND = 76,
+    // Suspended
+    SERVICE_SUSPENDED = 888,
 };
