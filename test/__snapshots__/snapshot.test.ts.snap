@@ -3384,7 +3384,7 @@ Object {
   ],
   "hl": "en",
   "lang": Object {
-    "changelog": "We have the latest 2021 bus schedule (it's a long year)! For those who are geeky, visit https://github.com/phy25/BITBusConfig",
+    "changelog": "Latest update of the bus service.",
     "contactNumber": "01068912868",
     "contactNumberRainbow": Array [
       "4000780080",
@@ -3444,7 +3444,7 @@ Fangshan Line: Guogongzhuang > Liangxiang University Town North
     },
     "fare": "Campus bus between Zhongguancun and Liangxiang: Single ticket, Student RMB 6, Faculty and others RMB 10. Only accepts campus card, fare deducted according to card type.
 Rainbow Bus: Fare RMB 9. Only accept payment from WeChat official account 彩虹巴士H2O or respective mobile app.",
-    "notice": "Please provide feedback below if you see issues with the 2021 bus schedule :>",
+    "notice": "Campus bus service has been suspended since 5/14. Stay safe!",
     "types": Array [
       "Faculty Bus",
       "Bus",
@@ -3509,7 +3509,7 @@ Rainbow Bus: Fare RMB 9. Only accept payment from WeChat official account 彩虹
       ],
     },
   },
-  "version": 20211006,
+  "version": 20220514,
   "weekdays": Object {
     "2020": Array [
       Array [
@@ -4437,15 +4437,15 @@ Rainbow Bus: Fare RMB 9. Only accept payment from WeChat official account 彩虹
         43,
         44,
         45,
-        36,
-        36,
-        41,
-        42,
-        43,
-        44,
-        45,
-        36,
-        36,
+        888,
+        888,
+        888,
+        888,
+        888,
+        888,
+        888,
+        888,
+        888,
         41,
         42,
         43,
@@ -8073,7 +8073,7 @@ Object {
   ],
   "hl": "zh",
   "lang": Object {
-    "changelog": "2021 年班车数据更新啦（真的很长的一年呢）！如果你对具体数据感兴趣，可以去 https://github.com/phy25/BITBusConfig",
+    "changelog": "更新最新班车动态。",
     "contactNumber": "01068912868",
     "contactNumberRainbow": Array [
       "4000780080",
@@ -8133,7 +8133,7 @@ A 出口步行到校，或在门口的站台等候摆渡车
     },
     "fare": "中关村与良乡间往返校营班车票价：学生 6 元/次，教职工和其他卡 10 元/次。只可凭校园卡支付车费，按卡类型自动收费。
 彩虹巴士试运行票价：9 元/次，只可通过微信公众号“彩虹巴士H2O”或其手机应用支付、验票。",
-    "notice": "2021 年班车数据如有问题，请通过下方反馈按钮告诉我 :>",
+    "notice": "班车服务自 5 月 14 日起暂停。祝各位健康！",
     "types": Array [
       "教师班车",
       "师生班车",
@@ -8197,7 +8197,7 @@ A 出口步行到校，或在门口的站台等候摆渡车
       ],
     },
   },
-  "version": 20211006,
+  "version": 20220514,
   "weekdays": Object {
     "2020": Array [
       Array [
@@ -9125,15 +9125,15 @@ A 出口步行到校，或在门口的站台等候摆渡车
         43,
         44,
         45,
-        36,
-        36,
-        41,
-        42,
-        43,
-        44,
-        45,
-        36,
-        36,
+        888,
+        888,
+        888,
+        888,
+        888,
+        888,
+        888,
+        888,
+        888,
         41,
         42,
         43,

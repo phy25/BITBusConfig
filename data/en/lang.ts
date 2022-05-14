@@ -3,7 +3,7 @@ import * as destList from './destList';
 
 export const data: DataLang = {
     "destList": destList.data,
-    "changelog": "Latest update of the bus service",
+    "changelog": "Latest update of the bus service.",
     "notice": "Campus bus service has been suspended since 5/14. Stay safe!",
     "fare": "Campus bus between Zhongguancun and Liangxiang: Single ticket, Student RMB 6, Faculty and others RMB 10. Only accepts campus card, fare deducted according to card type.\nRainbow Bus: Fare RMB 9. Only accept payment from WeChat official account 彩虹巴士H2O or respective mobile app.",
     "types": [
