@@ -17,10 +17,10 @@ data.addSemesterRules(
 data.addHolidayOverride(getLocalDateFromString('2022-01-01'), ScheduleDays.V1_HOLIDAY);
 data.addHolidayOverride(getLocalDateFromString('2022-01-03'), ScheduleDays.V3_WEEKEND);
 
-// https://www.bit.edu.cn/tzgg17/ggxx/14a3ea1597f74a1c83ce65edc1477bb9.htm
-// 06-19 is a placeholder date; currently service suspended indefinitely
+// suspended: https://www.bit.edu.cn/tzgg17/ggxx/14a3ea1597f74a1c83ce65edc1477bb9.htm
+// resumed: https://www.bit.edu.cn/tzgg17/ggxx/92b80697acf3430789269e03fc65c43d.htm
 data.addLongHolidayRules(
-    getLocalDateFromString('2022-05-14'), getLocalDateFromString('2022-06-19'), ScheduleDays.SERVICE_SUSPENDED, null,
+    getLocalDateFromString('2022-05-14'), getLocalDateFromString('2022-06-05'), ScheduleDays.SERVICE_SUSPENDED, null,
     [], ScheduleDays.SERVICE_SUSPENDED);
 
 // missing LX subway https://www.bit.edu.cn/tzgg17/ggxx/6808acbfb5e4472da69b2c0d57fc42ec.htm
