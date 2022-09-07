@@ -3509,7 +3509,7 @@ Rainbow Bus: Fare RMB 9. Only accept payment from WeChat official account 彩虹
       ],
     },
   },
-  "version": 20220606,
+  "version": 20220907,
   "weekdays": Object {
     "2017": Array [
       Array [
@@ -9370,7 +9370,7 @@ A 出口步行到校，或在门口的站台等候摆渡车
       ],
     },
   },
-  "version": 20220606,
+  "version": 20220907,
   "weekdays": Object {
     "2017": Array [
       Array [
