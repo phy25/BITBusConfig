@@ -1,5 +1,7 @@
 # BITBusConfig
 
+**Note**: This repository is archived. No more data update will happen or be accepted. For more information and for historial data, visit [the lite webapp](https://seethediff.cn/BITbus/) or WeChat Mini Program 理工校车.
+
 A hopefully small repo as an attempt to modernlize how (the legacy) BITBus WeChat Mini Program's config is maintained.
 
 Built with NodeJS, TypeScript, Jest.

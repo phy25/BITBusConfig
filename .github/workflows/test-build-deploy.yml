@@ -33,9 +33,9 @@ jobs:
           name: output-json
           path: build/*.json
           if-no-files-found: error
-  deploy:
-    name: Deploy
-    if: ${{ github.event_name == 'push' && github.ref	== 'refs/heads/main' }}
+  deploy-disabled:
+    name: Deploy (Disabled)
+    if: ${{ false }}
     runs-on: ubuntu-latest
     needs: unit-test-build
     environment: Production
